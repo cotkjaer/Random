@@ -22,6 +22,8 @@
 		8FD41E1C1C70B97100DDE89D /* CGFloatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E1B1C70B97100DDE89D /* CGFloatTests.swift */; };
 		8FD41E1E1C70BA0B00DDE89D /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E1D1C70BA0B00DDE89D /* CGPointTests.swift */; };
 		8FD41E201C70BB9400DDE89D /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E1F1C70BB9400DDE89D /* UIColorTests.swift */; };
+		8FD41E221C70BCD700DDE89D /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E211C70BCD700DDE89D /* ArrayTests.swift */; };
+		8FD41E241C70BCE700DDE89D /* SetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E231C70BCE700DDE89D /* SetTests.swift */; };
 		8FFB23891C7090640037A7C5 /* Random.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFB23881C7090640037A7C5 /* Random.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FFB23901C7090640037A7C5 /* Random.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFB23851C7090640037A7C5 /* Random.framework */; };
 		8FFB23951C7090640037A7C5 /* RandomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB23941C7090640037A7C5 /* RandomTests.swift */; };
@@ -54,6 +56,8 @@
 		8FD41E1B1C70B97100DDE89D /* CGFloatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatTests.swift; sourceTree = "<group>"; };
 		8FD41E1D1C70BA0B00DDE89D /* CGPointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointTests.swift; sourceTree = "<group>"; };
 		8FD41E1F1C70BB9400DDE89D /* UIColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
+		8FD41E211C70BCD700DDE89D /* ArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
+		8FD41E231C70BCE700DDE89D /* SetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTests.swift; sourceTree = "<group>"; };
 		8FFB23851C7090640037A7C5 /* Random.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Random.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFB23881C7090640037A7C5 /* Random.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Random.h; sourceTree = "<group>"; };
 		8FFB238A1C7090640037A7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				8FD41E151C70B54A00DDE89D /* DoubleTests.swift */,
 				8FD41E171C70B59A00DDE89D /* FloatTests.swift */,
 				8FD41E191C70B5DE00DDE89D /* BoolTests.swift */,
+				8FD41E211C70BCD700DDE89D /* ArrayTests.swift */,
+				8FD41E231C70BCE700DDE89D /* SetTests.swift */,
 				8FD41E1B1C70B97100DDE89D /* CGFloatTests.swift */,
 				8FD41E1D1C70BA0B00DDE89D /* CGPointTests.swift */,
 				8FD41E1F1C70BB9400DDE89D /* UIColorTests.swift */,
@@ -266,11 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD41E221C70BCD700DDE89D /* ArrayTests.swift in Sources */,
 				8FD41E181C70B59A00DDE89D /* FloatTests.swift in Sources */,
 				8FFB23951C7090640037A7C5 /* RandomTests.swift in Sources */,
 				8FD41E1E1C70BA0B00DDE89D /* CGPointTests.swift in Sources */,
 				8FD41E161C70B54A00DDE89D /* DoubleTests.swift in Sources */,
 				8FD41E141C70AB9400DDE89D /* IntTests.swift in Sources */,
+				8FD41E241C70BCE700DDE89D /* SetTests.swift in Sources */,
 				8FD41E201C70BB9400DDE89D /* UIColorTests.swift in Sources */,
 				8FD41E1C1C70B97100DDE89D /* CGFloatTests.swift in Sources */,
 				8FD41E1A1C70B5DE00DDE89D /* BoolTests.swift in Sources */,
