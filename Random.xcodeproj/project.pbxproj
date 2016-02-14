@@ -7,9 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FD41E021C709C2A00DDE89D /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E011C709C2A00DDE89D /* Array.swift */; };
+		8FD41E041C709C7A00DDE89D /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E031C709C7A00DDE89D /* Bool.swift */; };
+		8FD41E061C709D5300DDE89D /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E051C709D5300DDE89D /* CGFloat.swift */; };
+		8FD41E081C709D7400DDE89D /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E071C709D7400DDE89D /* CGPoint.swift */; };
+		8FD41E0A1C709E0600DDE89D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E091C709E0600DDE89D /* UIColor.swift */; };
+		8FD41E0E1C70A7F500DDE89D /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E0D1C70A7F500DDE89D /* Int.swift */; };
+		8FD41E101C70A98E00DDE89D /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E0F1C70A98E00DDE89D /* Double.swift */; };
+		8FD41E121C70A9BF00DDE89D /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E111C70A9BF00DDE89D /* Float.swift */; };
+		8FD41E141C70AB9400DDE89D /* IntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E131C70AB9400DDE89D /* IntTests.swift */; };
+		8FD41E161C70B54A00DDE89D /* DoubleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E151C70B54A00DDE89D /* DoubleTests.swift */; };
+		8FD41E181C70B59A00DDE89D /* FloatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E171C70B59A00DDE89D /* FloatTests.swift */; };
+		8FD41E1A1C70B5DE00DDE89D /* BoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E191C70B5DE00DDE89D /* BoolTests.swift */; };
+		8FD41E1C1C70B97100DDE89D /* CGFloatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E1B1C70B97100DDE89D /* CGFloatTests.swift */; };
+		8FD41E1E1C70BA0B00DDE89D /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E1D1C70BA0B00DDE89D /* CGPointTests.swift */; };
+		8FD41E201C70BB9400DDE89D /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E1F1C70BB9400DDE89D /* UIColorTests.swift */; };
 		8FFB23891C7090640037A7C5 /* Random.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFB23881C7090640037A7C5 /* Random.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FFB23901C7090640037A7C5 /* Random.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFB23851C7090640037A7C5 /* Random.framework */; };
 		8FFB23951C7090640037A7C5 /* RandomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB23941C7090640037A7C5 /* RandomTests.swift */; };
+		8FFB23A11C7090B60037A7C5 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB23A01C7090B60037A7C5 /* Random.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +39,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8FD41E011C709C2A00DDE89D /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		8FD41E031C709C7A00DDE89D /* Bool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
+		8FD41E051C709D5300DDE89D /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		8FD41E071C709D7400DDE89D /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
+		8FD41E091C709E0600DDE89D /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		8FD41E0D1C70A7F500DDE89D /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		8FD41E0F1C70A98E00DDE89D /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		8FD41E111C70A9BF00DDE89D /* Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
+		8FD41E131C70AB9400DDE89D /* IntTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTests.swift; sourceTree = "<group>"; };
+		8FD41E151C70B54A00DDE89D /* DoubleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleTests.swift; sourceTree = "<group>"; };
+		8FD41E171C70B59A00DDE89D /* FloatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatTests.swift; sourceTree = "<group>"; };
+		8FD41E191C70B5DE00DDE89D /* BoolTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolTests.swift; sourceTree = "<group>"; };
+		8FD41E1B1C70B97100DDE89D /* CGFloatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatTests.swift; sourceTree = "<group>"; };
+		8FD41E1D1C70BA0B00DDE89D /* CGPointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointTests.swift; sourceTree = "<group>"; };
+		8FD41E1F1C70BB9400DDE89D /* UIColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
 		8FFB23851C7090640037A7C5 /* Random.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Random.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFB23881C7090640037A7C5 /* Random.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Random.h; sourceTree = "<group>"; };
 		8FFB238A1C7090640037A7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FFB238F1C7090640037A7C5 /* RandomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFB23941C7090640037A7C5 /* RandomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomTests.swift; sourceTree = "<group>"; };
 		8FFB23961C7090640037A7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FFB23A01C7090B60037A7C5 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +103,16 @@
 		8FFB23871C7090640037A7C5 /* Random */ = {
 			isa = PBXGroup;
 			children = (
-				8FFB23881C7090640037A7C5 /* Random.h */,
-				8FFB238A1C7090640037A7C5 /* Info.plist */,
+				8FFB23A01C7090B60037A7C5 /* Random.swift */,
+				8FD41E111C70A9BF00DDE89D /* Float.swift */,
+				8FD41E0F1C70A98E00DDE89D /* Double.swift */,
+				8FD41E0D1C70A7F500DDE89D /* Int.swift */,
+				8FD41E011C709C2A00DDE89D /* Array.swift */,
+				8FD41E031C709C7A00DDE89D /* Bool.swift */,
+				8FD41E051C709D5300DDE89D /* CGFloat.swift */,
+				8FD41E071C709D7400DDE89D /* CGPoint.swift */,
+				8FD41E091C709E0600DDE89D /* UIColor.swift */,
+				8FFB239F1C7090730037A7C5 /* Supporting Files */,
 			);
 			path = Random;
 			sourceTree = "<group>";
@@ -82,8 +122,24 @@
 			children = (
 				8FFB23941C7090640037A7C5 /* RandomTests.swift */,
 				8FFB23961C7090640037A7C5 /* Info.plist */,
+				8FD41E131C70AB9400DDE89D /* IntTests.swift */,
+				8FD41E151C70B54A00DDE89D /* DoubleTests.swift */,
+				8FD41E171C70B59A00DDE89D /* FloatTests.swift */,
+				8FD41E191C70B5DE00DDE89D /* BoolTests.swift */,
+				8FD41E1B1C70B97100DDE89D /* CGFloatTests.swift */,
+				8FD41E1D1C70BA0B00DDE89D /* CGPointTests.swift */,
+				8FD41E1F1C70BB9400DDE89D /* UIColorTests.swift */,
 			);
 			path = RandomTests;
+			sourceTree = "<group>";
+		};
+		8FFB239F1C7090730037A7C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FFB23881C7090640037A7C5 /* Random.h */,
+				8FFB238A1C7090640037A7C5 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +250,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD41E061C709D5300DDE89D /* CGFloat.swift in Sources */,
+				8FD41E0A1C709E0600DDE89D /* UIColor.swift in Sources */,
+				8FD41E101C70A98E00DDE89D /* Double.swift in Sources */,
+				8FFB23A11C7090B60037A7C5 /* Random.swift in Sources */,
+				8FD41E021C709C2A00DDE89D /* Array.swift in Sources */,
+				8FD41E081C709D7400DDE89D /* CGPoint.swift in Sources */,
+				8FD41E041C709C7A00DDE89D /* Bool.swift in Sources */,
+				8FD41E0E1C70A7F500DDE89D /* Int.swift in Sources */,
+				8FD41E121C70A9BF00DDE89D /* Float.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +266,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD41E181C70B59A00DDE89D /* FloatTests.swift in Sources */,
 				8FFB23951C7090640037A7C5 /* RandomTests.swift in Sources */,
+				8FD41E1E1C70BA0B00DDE89D /* CGPointTests.swift in Sources */,
+				8FD41E161C70B54A00DDE89D /* DoubleTests.swift in Sources */,
+				8FD41E141C70AB9400DDE89D /* IntTests.swift in Sources */,
+				8FD41E201C70BB9400DDE89D /* UIColorTests.swift in Sources */,
+				8FD41E1C1C70B97100DDE89D /* CGFloatTests.swift in Sources */,
+				8FD41E1A1C70B5DE00DDE89D /* BoolTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +380,7 @@
 		8FFB239A1C7090640037A7C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +391,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.silverback-it.Random";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		8FFB239B1C7090640037A7C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -376,6 +451,7 @@
 				8FFB239B1C7090640037A7C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FFB239C1C7090640037A7C5 /* Build configuration list for PBXNativeTarget "RandomTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +460,7 @@
 				8FFB239E1C7090640037A7C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

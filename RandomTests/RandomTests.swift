@@ -9,28 +9,40 @@
 import XCTest
 @testable import Random
 
-class RandomTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+class RandomTests: XCTestCase
+{
+    func test_arc4random_Double()
+    {
+        let f = arc4random(Double)
+        let g = arc4random(Double)
+        XCTAssertNotEqual(f, g, "Amazingly f (\(f)) turned out to be g (\(g))")
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func test_arc4random_Int()
+    {
+        let f = arc4random(Int)
+        let g = arc4random(Int)
+        XCTAssertNotEqual(f, g, "Amazingly f (\(f)) turned out to be g (\(g))")
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test_arc4random_Float()
+    {
+        let f = arc4random(Float)
+        let g = arc4random(Float)
+        XCTAssertNotEqual(f, g, "Amazingly f (\(f)) turned out to be g (\(g))")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    func test_arc4random_UInt64()
+    {
+        let f = arc4random(UInt64)
+        let g = arc4random(UInt64)
+        XCTAssertNotEqual(f, g, "Amazingly f (\(f)) turned out to be g (\(g))")
     }
     
+    func test_arc4random_UInt8()
+    {
+        let f = arc4random(UInt8)
+        let g = arc4random(UInt8)
+        XCTAssertNotEqual(f, g, "Amazingly f (\(f)) turned out to be g (\(g))")
+    }
 }
