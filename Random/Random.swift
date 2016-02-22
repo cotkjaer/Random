@@ -17,14 +17,4 @@ public func arc4random<T: IntegerLiteralConvertible>(type: T.Type) -> T
     
     return r
 }
-/*
-public func arc4random<T: IntegerLiteralConvertible>() -> T
-{
-    var r: T = 0
-    
-    arc4random_buf(&r, sizeof(T))
-    
-    return r
-}
-*/
 
