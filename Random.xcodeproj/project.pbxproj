@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FCE6AC51C7C6E390079A587 /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE6AC41C7C6E390079A587 /* CollectionType.swift */; };
+		8FCE6AC71C7C6F360079A587 /* SequenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE6AC61C7C6F360079A587 /* SequenceType.swift */; };
 		8FD41E021C709C2A00DDE89D /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E011C709C2A00DDE89D /* Array.swift */; };
 		8FD41E041C709C7A00DDE89D /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E031C709C7A00DDE89D /* Bool.swift */; };
 		8FD41E061C709D5300DDE89D /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E051C709D5300DDE89D /* CGFloat.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8FCE6AC41C7C6E390079A587 /* CollectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionType.swift; sourceTree = "<group>"; };
+		8FCE6AC61C7C6F360079A587 /* SequenceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceType.swift; sourceTree = "<group>"; };
 		8FD41E011C709C2A00DDE89D /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		8FD41E031C709C7A00DDE89D /* Bool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
 		8FD41E051C709D5300DDE89D /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				8FD41E0F1C70A98E00DDE89D /* Double.swift */,
 				8FD41E0D1C70A7F500DDE89D /* Int.swift */,
 				8FD41E011C709C2A00DDE89D /* Array.swift */,
+				8FCE6AC61C7C6F360079A587 /* SequenceType.swift */,
+				8FCE6AC41C7C6E390079A587 /* CollectionType.swift */,
 				8FD41E031C709C7A00DDE89D /* Bool.swift */,
 				8FD41E051C709D5300DDE89D /* CGFloat.swift */,
 				8FD41E071C709D7400DDE89D /* CGPoint.swift */,
@@ -261,9 +267,11 @@
 				8FD41E101C70A98E00DDE89D /* Double.swift in Sources */,
 				8FFB23A11C7090B60037A7C5 /* Random.swift in Sources */,
 				8FD41E021C709C2A00DDE89D /* Array.swift in Sources */,
+				8FCE6AC51C7C6E390079A587 /* CollectionType.swift in Sources */,
 				8FD41E081C709D7400DDE89D /* CGPoint.swift in Sources */,
 				8FD41E041C709C7A00DDE89D /* Bool.swift in Sources */,
 				8FD41E0E1C70A7F500DDE89D /* Int.swift in Sources */,
+				8FCE6AC71C7C6F360079A587 /* SequenceType.swift in Sources */,
 				8FD41E121C70A9BF00DDE89D /* Float.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

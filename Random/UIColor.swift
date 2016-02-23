@@ -15,9 +15,12 @@ private func randomColorComponent(minValue: CGFloat, _ maxValue: CGFloat) -> CGF
     return CGFloat.random(between: minValue, and: maxValue)
 }
 
-private func randomColorComponent() -> CGFloat
+private func randomColorComponent(low: Int = 0, _ high: Int = 0xFF) -> CGFloat
 {
-    return CGFloat(Int.random(between: 0x00, and: 0xFF + 1)) / CGFloat(0xFF)
+    let l = max(0, min(low, high))
+    let h = min(0xFF, max(low, high))
+    
+    return CGFloat(Int.random(between: l, and: h + 1)) / CGFloat(0xFF)
 }
 
 public extension UIColor
@@ -29,30 +32,41 @@ public extension UIColor
     }
     
     /// Produces a random color with an alpha component = 1
-    static func randomSolidColor() -> UIColor
+    static func randomSolidColor(
+        minR minR: Int = 0, maxR: Int = 0xFF,
+        minG: Int = 0, maxG: Int = 0xFF,
+        minB: Int = 0, maxB: Int = 0xFF
+        ) -> UIColor
     {
         return UIColor(
-            red: randomColorComponent(),
-            green: randomColorComponent(),
-            blue: randomColorComponent(),
+            red: randomColorComponent(minR, maxR),
+            green: randomColorComponent(minG, maxG),
+            blue: randomColorComponent(minB, maxB),
             alpha: 1
         )
     }
     
     /// Produces a random color with a random alpha part
-    static func randomColor() -> UIColor
+    static func randomColor(
+        minR minR: Int = 0, maxR: Int = 0xFF,
+        minG: Int = 0, maxG: Int = 0xFF,
+        minB: Int = 0, maxB: Int = 0xFF,
+        minA: Int = 0, maxA: Int = 0xFF
+        ) -> UIColor
     {
-        return randomSolidColor().colorWithAlphaComponent(randomColorComponent())
+        return UIColor(
+            red: randomColorComponent(minR, maxR),
+            green: randomColorComponent(minG, maxG),
+            blue: randomColorComponent(minB, maxB),
+            alpha: randomColorComponent(minA, maxA)
+        )
     }
     
-    convenience init(minRed:CGFloat,
-        maxRed:CGFloat,
-        minGreen:CGFloat,
-        maxGreen:CGFloat,
-        minBlue:CGFloat,
-        maxBlue:CGFloat,
-        minAlpha:CGFloat,
-        maxAlpha:CGFloat)
+    convenience init(
+        minRed:CGFloat,  maxRed:CGFloat,
+        minGreen:CGFloat, maxGreen:CGFloat,
+        minBlue:CGFloat, maxBlue:CGFloat,
+        minAlpha:CGFloat,  maxAlpha:CGFloat)
     {
         self.init(red: randomColorComponent(minRed, maxRed),
             green:randomColorComponent(minGreen, maxGreen),
@@ -60,14 +74,11 @@ public extension UIColor
             alpha:randomColorComponent(minAlpha, maxAlpha))
     }
     
-    convenience init(minHue:CGFloat,
-        maxHue:CGFloat,
-        minSaturation:CGFloat,
-        maxSaturation:CGFloat,
-        minBrightness:CGFloat,
-        maxBrightness:CGFloat,
-        minAlpha:CGFloat,
-        maxAlpha:CGFloat)
+    convenience init(
+        minHue:CGFloat, maxHue:CGFloat,
+        minSaturation:CGFloat, maxSaturation:CGFloat,
+        minBrightness:CGFloat, maxBrightness:CGFloat,
+        minAlpha:CGFloat, maxAlpha:CGFloat)
     {
         self.init(hue:randomColorComponent(minHue, maxHue),
             saturation:randomColorComponent(minSaturation, maxSaturation),

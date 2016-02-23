@@ -10,7 +10,7 @@ public extension Bool
 {
     static func random() -> Bool
     {
-        return Double.random() > 0.5
+        return arc4random(UInt64) % 2 == 0
     }
 }
 

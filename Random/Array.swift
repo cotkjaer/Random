@@ -6,29 +6,6 @@
 //  Copyright © 2016 Christian Otkjær. All rights reserved.
 //
 
-// MARK: - Random
-
-public extension Array
-{
-    /**
-     Picks a random element from the array
-     
-     - returns: random element from the array or nil if the array is empty
-     */
-    func random() -> Element?
-    {
-        switch count
-        {
-        case 0:
-            return nil
-        case 1:
-            return first
-        default:
-            return self[Int.random(between: 0, and: count)]
-        }
-    }
-}
-
 // MARK: - Shuffle
 
 public extension Array
@@ -68,23 +45,5 @@ public extension Array
 }
 
 
-// MARK: - Random
 
-extension CollectionType
-{
-    @warn_unused_result
-    public func random() -> Generator.Element?
-    {
-        return Array(self).random()
-    }
-}
-
-public extension SequenceType
-{
-    @warn_unused_result
-    public func random() -> Generator.Element?
-    {
-        return Array(self).random()
-    }
-}
 
