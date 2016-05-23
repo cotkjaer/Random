@@ -65,7 +65,7 @@ class IntTests: XCTestCase
         {
             let index = Int.random(between: 0, and: outcomes)
             
-            counters[index]++
+            counters[index] += 1
         }
         
         if let n = counters.first

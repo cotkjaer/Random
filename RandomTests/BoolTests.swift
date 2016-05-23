@@ -18,7 +18,7 @@ class BoolTests: XCTestCase {
         let iterations = 100000
         for _ in 1.stride(through: iterations, by: 1)
         {
-            if Bool.random() { trues++ } else { falses++ }
+            if Bool.random() { trues += 1 } else { falses += 1 }
         }
         
         XCTAssertEqualWithAccuracy(Double(trues), Double(falses), accuracy: Double(iterations) * 0.02) // less than 2%

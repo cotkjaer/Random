@@ -10,7 +10,7 @@ public extension Bool
 {
     static func random() -> Bool
     {
-        return arc4random(UInt64) % 2 == 0
+        return arc4random(UInt64) & 1 == 0//% 2 == 0
     }
 }
 
@@ -33,13 +33,4 @@ public func random<T>(t: T, _ ts: T...) -> T
 public func either<T>(@noescape this: () throws -> T, @noescape or that: () throws -> T) rethrows -> T
 {
     return Bool.random() ? try this() : try that()
-    
-//    if Bool.random()
-//    {
-//        return try this()
-//    }
-//    else
-//    {
-//        return try that()
-//    }
 }

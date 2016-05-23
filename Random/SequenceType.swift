@@ -34,6 +34,5 @@ public extension SequenceType
         }
         
         return randomElement
-        
     }
 }

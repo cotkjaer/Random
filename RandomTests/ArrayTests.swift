@@ -46,4 +46,21 @@ class ArrayTests: XCTestCase
             }
         }
     }
+    
+    func test_shuffle()
+    {
+        var numbers = Array(0..<100)
+
+        let s1 = numbers.shuffled()
+        let s2 = numbers.shuffled()
+        
+        XCTAssertNotEqual(s1, s2, "Amazingly s1 (\(s1)) turned out to be s2 (\(s2))")
+        XCTAssertNotEqual(s1, numbers, "Amazingly s1 (\(s1)) turned out to be numbers (\(numbers))")
+        
+        XCTAssertNotEqual(numbers, s2, "Amazingly s2 (\(s2)) turned out to be numbers (\(numbers))")
+        
+        numbers.shuffle()
+        
+        XCTAssertNotEqual(numbers, Array(0..<100), "Amazingly shuffle (\(numbers)) turned out to be numbers (\(Array(0..<100)))")
+    }
 }
