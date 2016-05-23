@@ -15,11 +15,13 @@ public extension Array
      */
     mutating func shuffle()
     {
-        if count > 1
+        let N = count
+        
+        if N > 1
         {
-            for var i = count - 1; i >= 1; i--
+            for i in (N - 1).stride(to: 1, by: -1)
             {
-                let j = Int.random(between: 0, and: i+1)
+                let j = Int.random(between: 0, and: i + 1)
                 
                 if j != i
                 {
