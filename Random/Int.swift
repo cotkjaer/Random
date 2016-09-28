@@ -28,11 +28,11 @@ public extension Int
 
 public extension UInt64
 {
-    static func random(lower: UInt64 = min, upper: UInt64 = max) -> UInt64
+    static func random(_ lower: UInt64 = min, upper: UInt64 = max) -> UInt64
     {
         var m: UInt64
         let u = upper - lower
-        var r = arc4random(UInt64)
+        var r = arc4random(UInt64.self)
         
         if u > UInt64(Int64.max)
         {
@@ -45,7 +45,7 @@ public extension UInt64
         
         while r < m
         {
-            r = arc4random(UInt64)
+            r = arc4random(UInt64.self)
         }
         
         return (r % u) + lower
@@ -54,7 +54,7 @@ public extension UInt64
 
 public extension Int64
 {
-    static func random(lower: Int64 = min, upper: Int64 = max) -> Int64
+    static func random(_ lower: Int64 = min, upper: Int64 = max) -> Int64
     {
         let (s, overflow) = Int64.subtractWithOverflow(upper, lower)
         let u = overflow ? UInt64.max - UInt64(~s) : UInt64(s)
@@ -73,7 +73,7 @@ public extension Int64
 
 public extension UInt32
 {
-    static func random(lower: UInt32 = min, upper: UInt32 = max) -> UInt32
+    static func random(_ lower: UInt32 = min, upper: UInt32 = max) -> UInt32
     {
         return arc4random_uniform(upper - lower) + lower
     }
@@ -81,7 +81,7 @@ public extension UInt32
 
 public extension Int32
 {
-    static func random(lower: Int32 = min, upper: Int32 = max) -> Int32
+    static func random(_ lower: Int32 = min, upper: Int32 = max) -> Int32
     {
         let r = arc4random_uniform(UInt32(Int64(upper) - Int64(lower)))
         return Int32(Int64(r) + Int64(lower))
@@ -90,7 +90,7 @@ public extension Int32
 
 public extension UInt
 {
-    static func random(lower: UInt = min, upper: UInt = max) -> UInt
+    static func random(_ lower: UInt = min, upper: UInt = max) -> UInt
     {
         return UInt(UInt64.random(UInt64(lower), upper: UInt64(upper)))
     }

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8FCE6AC51C7C6E390079A587 /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE6AC41C7C6E390079A587 /* CollectionType.swift */; };
-		8FCE6AC71C7C6F360079A587 /* SequenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE6AC61C7C6F360079A587 /* SequenceType.swift */; };
+		8FCE6AC51C7C6E390079A587 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE6AC41C7C6E390079A587 /* Collection.swift */; };
+		8FCE6AC71C7C6F360079A587 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE6AC61C7C6F360079A587 /* Sequence.swift */; };
 		8FD41E021C709C2A00DDE89D /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E011C709C2A00DDE89D /* Array.swift */; };
 		8FD41E041C709C7A00DDE89D /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E031C709C7A00DDE89D /* Bool.swift */; };
 		8FD41E061C709D5300DDE89D /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD41E051C709D5300DDE89D /* CGFloat.swift */; };
@@ -43,8 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8FCE6AC41C7C6E390079A587 /* CollectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionType.swift; sourceTree = "<group>"; };
-		8FCE6AC61C7C6F360079A587 /* SequenceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceType.swift; sourceTree = "<group>"; };
+		8FCE6AC41C7C6E390079A587 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		8FCE6AC61C7C6F360079A587 /* Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		8FD41E011C709C2A00DDE89D /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		8FD41E031C709C7A00DDE89D /* Bool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
 		8FD41E051C709D5300DDE89D /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
@@ -116,8 +116,8 @@
 				8FD41E0F1C70A98E00DDE89D /* Double.swift */,
 				8FD41E0D1C70A7F500DDE89D /* Int.swift */,
 				8FD41E011C709C2A00DDE89D /* Array.swift */,
-				8FCE6AC61C7C6F360079A587 /* SequenceType.swift */,
-				8FCE6AC41C7C6E390079A587 /* CollectionType.swift */,
+				8FCE6AC61C7C6F360079A587 /* Sequence.swift */,
+				8FCE6AC41C7C6E390079A587 /* Collection.swift */,
 				8FD41E031C709C7A00DDE89D /* Bool.swift */,
 				8FD41E051C709D5300DDE89D /* CGFloat.swift */,
 				8FD41E071C709D7400DDE89D /* CGPoint.swift */,
@@ -211,14 +211,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Christian Otkjær";
 				TargetAttributes = {
 					8FFB23841C7090640037A7C5 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 					};
 					8FFB238E1C7090640037A7C5 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -267,11 +269,11 @@
 				8FD41E101C70A98E00DDE89D /* Double.swift in Sources */,
 				8FFB23A11C7090B60037A7C5 /* Random.swift in Sources */,
 				8FD41E021C709C2A00DDE89D /* Array.swift in Sources */,
-				8FCE6AC51C7C6E390079A587 /* CollectionType.swift in Sources */,
+				8FCE6AC51C7C6E390079A587 /* Collection.swift in Sources */,
 				8FD41E081C709D7400DDE89D /* CGPoint.swift in Sources */,
 				8FD41E041C709C7A00DDE89D /* Bool.swift in Sources */,
 				8FD41E0E1C70A7F500DDE89D /* Int.swift in Sources */,
-				8FCE6AC71C7C6F360079A587 /* SequenceType.swift in Sources */,
+				8FCE6AC71C7C6F360079A587 /* Sequence.swift in Sources */,
 				8FD41E121C70A9BF00DDE89D /* Float.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,8 +319,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -365,8 +369,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -386,6 +392,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -397,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -408,6 +416,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -415,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -425,6 +435,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.silverback-it.Random";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -435,6 +446,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.silverback-it.RandomTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -445,6 +457,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.silverback-it.RandomTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

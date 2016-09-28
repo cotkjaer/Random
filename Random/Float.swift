@@ -18,7 +18,7 @@ public extension Float
     public static func random(between lower: Float = 0, and upper: Float = 1) -> Float
     {
         //Construct random Float between 0 and 1
-        let r = Float(arc4random(UInt32)) / Float(UInt32.max)
+        let r = Float(arc4random(UInt32.self)) / Float(UInt32.max)
         
         //Use LERP to find result (renders the order of lower and upper irrelevant)
         return r * lower + (1 - r) * upper

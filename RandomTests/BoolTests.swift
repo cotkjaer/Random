@@ -16,7 +16,7 @@ class BoolTests: XCTestCase {
         var falses = 0
         
         let iterations = 100000
-        for _ in 1.stride(through: iterations, by: 1)
+        for _ in stride(from: 1, through: iterations, by: 1)
         {
             if Bool.random() { trues += 1 } else { falses += 1 }
         }

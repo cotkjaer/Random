@@ -10,27 +10,27 @@ public extension Bool
 {
     static func random() -> Bool
     {
-        return arc4random(UInt64) & 1 == 0//% 2 == 0
+        return arc4random(UInt64.self) & 1 == 0
     }
 }
 
 /// Randomly returns **either** `this` or `that`
-@warn_unused_result
-public func either<T>(this: T, or that: T) -> T
+
+public func either<T>(_ this: T, or that: T) -> T
 {
     return Bool.random() ? this : that
 }
 
 /// Randomly returns one of the `T`s
-@warn_unused_result
-public func random<T>(t: T, _ ts: T...) -> T
+
+public func random<T>(_ t: T, _ ts: T...) -> T
 {
     return (ts + [t]).random()!
 }
 
 /// Randomly executes **either** `this()` or `that()`
-@warn_unused_result
-public func either<T>(@noescape this: () throws -> T, @noescape or that: () throws -> T) rethrows -> T
+
+public func either<T>(this: () throws -> T, or that: () throws -> T) rethrows -> T
 {
     return Bool.random() ? try this() : try that()
 }

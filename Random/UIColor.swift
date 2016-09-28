@@ -10,12 +10,12 @@ import UIKit
 
 //MARK: - Random
 
-private func randomColorComponent(minValue: CGFloat, _ maxValue: CGFloat) -> CGFloat
+private func randomColorComponent(_ minValue: CGFloat, _ maxValue: CGFloat) -> CGFloat
 {
     return CGFloat.random(between: minValue, and: maxValue)
 }
 
-private func randomColorComponent(low: Int = 0, _ high: Int = 0xFF) -> CGFloat
+private func randomColorComponent(_ low: Int = 0, _ high: Int = 0xFF) -> CGFloat
 {
     let l = max(0, min(low, high))
     let h = min(0xFF, max(low, high))
@@ -33,7 +33,7 @@ public extension UIColor
     
     /// Produces a random color with an alpha component = 1
     static func randomSolidColor(
-        minR minR: Int = 0, maxR: Int = 0xFF,
+        minR: Int = 0, maxR: Int = 0xFF,
         minG: Int = 0, maxG: Int = 0xFF,
         minB: Int = 0, maxB: Int = 0xFF
         ) -> UIColor
@@ -48,7 +48,7 @@ public extension UIColor
     
     /// Produces a random color with a random alpha part
     static func randomColor(
-        minR minR: Int = 0, maxR: Int = 0xFF,
+        minR: Int = 0, maxR: Int = 0xFF,
         minG: Int = 0, maxG: Int = 0xFF,
         minB: Int = 0, maxB: Int = 0xFF,
         minA: Int = 0, maxA: Int = 0xFF

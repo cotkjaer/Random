@@ -21,7 +21,7 @@ class IntTests: XCTestCase
         {
             var counters = Dictionary<Int,Int>()
             
-            for _ in 1.stride(through: iterations, by: 1)
+            for _ in stride(from: 1, through: iterations, by: 1)
             {
                 let r = Int.random(between: lower, and: upper)
                 
@@ -57,11 +57,11 @@ class IntTests: XCTestCase
     {
         let outcomes = 10
         
-        var counters = Array<Int>(count: outcomes, repeatedValue: 0)
+        var counters = Array<Int>(repeating: 0, count: outcomes)
         
         let iterations = 10000
         
-        for _ in 1.stride(through: iterations, by: 1)
+        for _ in stride(from: 1, through: iterations, by: 1)
         {
             let index = Int.random(between: 0, and: outcomes)
             

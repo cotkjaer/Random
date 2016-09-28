@@ -10,7 +10,7 @@ import XCTest
 
 class UIColorTests: XCTestCase
 {
-    func testExample()
+    func test_randomColor()
     {
         XCTAssertNotEqual(UIColor.randomColor(), UIColor.randomColor())
     }

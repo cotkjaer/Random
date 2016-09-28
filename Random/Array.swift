@@ -19,7 +19,7 @@ public extension Array
         
         if N > 1
         {
-            for i in (N - 1).stride(to: 1, by: -1)
+            for i in stride(from: (N - 1), to: 1, by: -1)
             {
                 let j = Int.random(between: 0, and: i + 1)
                 
