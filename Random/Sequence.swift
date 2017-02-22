@@ -33,4 +33,18 @@ public extension Sequence
         
         return randomElement
     }
+    
+    /**
+     Shuffles the values of this sequence
+     
+     - returns: An array containing the shuffled elements in `self`
+     */
+    func shuffled() -> [Iterator.Element]
+    {
+        var shuffled = Array(self)
+        
+        shuffled.shuffle()
+        
+        return shuffled
+    }
 }
