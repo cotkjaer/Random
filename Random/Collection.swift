@@ -17,14 +17,8 @@ public extension Collection where Index == Int
      */
     func random() -> Iterator.Element?
     {
-        switch count
-        {
-        case 0:
-            return nil
-        case 1:
-            return first
-        default:
-            return self[Int.random(between: startIndex, and: endIndex)]
-        }
+        guard count > 1 else { return first }
+        
+        return self[Int.random(between: startIndex, and: endIndex)]
     }
 }
