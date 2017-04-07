@@ -31,7 +31,7 @@ class IntTests: XCTestCase
                 XCTAssertLessThan(r, upper)
             }
             
-            let ratio : Double = Double(iterations) / Double(counters.count)
+            let ratio: Double = Double(iterations) / Double(counters.count)
             
             for (_, count) in counters
             {

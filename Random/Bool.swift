@@ -18,7 +18,7 @@ public extension Bool
 
 public func either<T>(_ this: T, or that: T) -> T
 {
-    return Bool.random() ? this : that
+    return Bool.random() ? this: that
 }
 
 /// Randomly returns one of the `T`s
@@ -32,5 +32,5 @@ public func random<T>(_ t: T, _ ts: T...) -> T
 
 public func either<T>(this: () throws -> T, or that: () throws -> T) rethrows -> T
 {
-    return Bool.random() ? try this() : try that()
+    return Bool.random() ? try this(): try that()
 }

@@ -18,8 +18,8 @@ public extension Sequence
         // Simpler way, but has to create a whole Array
         // return Array(self).random()
         
-        var best : Double = 2
-        var randomElement : Iterator.Element? = nil
+        var best: Double = 2
+        var randomElement: Iterator.Element? = nil
         
         for element in self
         {

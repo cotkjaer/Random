@@ -16,8 +16,8 @@ class SetTests: XCTestCase
         
         let set = Set(numbers)
         
-        var array1 : [Int] = []
-        var array2 : [Int] = []
+        var array1: [Int] = []
+        var array2: [Int] = []
         
         for _ in (0..<10)
         {
