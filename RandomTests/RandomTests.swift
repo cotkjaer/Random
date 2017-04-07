@@ -13,42 +13,41 @@ class RandomTests: XCTestCase
 {
     func test_arc4random_Double()
     {
-        var f = arc4random(Double.self)
-        var g = arc4random(Double.self)
+        var f:Double = arc4random()
+        var g:Double = arc4random()
         XCTAssertNotEqual(f, g, "Amazingly f (\(f)) turned out to be g (\(g))")
         
         f = arc4random()
         g = arc4random()
         
         XCTAssertNotEqual(f, g, "Amazingly f (\(f)) turned out to be g (\(g))")
-        
     }
     
     func test_arc4random_Int()
     {
-        let f = arc4random(Int.self)
-        let g = arc4random(Int.self)
+        let f:Int = arc4random()
+        let g:Int = arc4random()
         XCTAssertNotEqual(f, g, "Amazingly f (\(f)) turned out to be g (\(g))")
     }
     
     func test_arc4random_Float()
     {
-        let f = arc4random(Float.self)
-        let g = arc4random(Float.self)
+        let f:Float = arc4random()
+        let g:Float = arc4random()
         XCTAssertNotEqual(f, g, "Amazingly f (\(f)) turned out to be g (\(g))")
     }
     
     func test_arc4random_UInt64()
     {
-        let f = arc4random(UInt64.self)
-        let g = arc4random(UInt64.self)
+        let f:UInt64 = arc4random()
+        let g:UInt64 = arc4random()
         XCTAssertNotEqual(f, g, "Amazingly f (\(f)) turned out to be g (\(g))")
     }
     
     func test_arc4random_UInt8()
     {
-        let f = arc4random(UInt8.self)
-        let g = arc4random(UInt8.self)
+        let f:UInt8 = arc4random()
+        let g:UInt8 = arc4random()
         XCTAssertNotEqual(f, g, "Amazingly f (\(f)) turned out to be g (\(g))")
     }
 }

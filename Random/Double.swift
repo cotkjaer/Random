@@ -17,10 +17,12 @@ public extension Double
      */
     public static func random(between lower: Double = 0, and upper: Double = 1) -> Double
     {
-        //Construct random between 0 and 1
-        let r = Double(arc4random(UInt64.self)) / Double(UInt64.max)
-        
-        //Use LERP to find result (renders the order of lower and upper irrelevant)
-        return r * lower + (1 - r) * upper
+        return arc4random_uniform(above: lower, below: upper)
+//
+//        //Construct random between 0 and 1
+//        let r = Double(arc4random(UInt64.self)) / Double(UInt64.max)
+//        
+//        //Use LERP to find result (renders the order of lower and upper irrelevant)
+//        return r * lower + (1 - r) * upper
     }
 }

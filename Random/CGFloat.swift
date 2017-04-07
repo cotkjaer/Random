@@ -19,10 +19,11 @@ public extension CGFloat
      */
     public static func random(between lower: CGFloat = 0, and upper: CGFloat = 1) -> CGFloat
     {
-        //Construct random CGFloat between 0 and 1
-        let r = CGFloat(arc4random(UInt32.self)) / CGFloat(UInt32.max)
-        
-        //Use LERP to find result (renders the order of lower and upper irrelevant)
-        return r * lower + (1 - r) * upper
+        return arc4random_uniform(above: lower, below: upper)
+//        //Construct random CGFloat between 0 and 1
+//        let r = CGFloat(arc4random(UInt32.self)) / CGFloat(UInt32.max)
+//        
+//        //Use LERP to find result (renders the order of lower and upper irrelevant)
+//        return r * lower + (1 - r) * upper
     }
 }

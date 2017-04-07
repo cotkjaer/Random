@@ -10,7 +10,8 @@ public extension Bool
 {
     static func random() -> Bool
     {
-        return arc4random(UInt64.self) & 1 == 0
+        let n: UInt64 = arc4random()
+        return n & 1 == 0
     }
 }
 
