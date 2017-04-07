@@ -13,9 +13,15 @@ class RandomTests: XCTestCase
 {
     func test_arc4random_Double()
     {
-        let f = arc4random(Double.self)
-        let g = arc4random(Double.self)
+        var f = arc4random(Double.self)
+        var g = arc4random(Double.self)
         XCTAssertNotEqual(f, g, "Amazingly f (\(f)) turned out to be g (\(g))")
+        
+        f = arc4random()
+        g = arc4random()
+        
+        XCTAssertNotEqual(f, g, "Amazingly f (\(f)) turned out to be g (\(g))")
+        
     }
     
     func test_arc4random_Int()
