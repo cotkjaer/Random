@@ -44,7 +44,7 @@ class IntTests: XCTestCase
                 let (m,M) = counters.values.reduce((n,n)) { (min($1, $0.0), max($1, $0.1)) }
                 
                 XCTAssertGreaterThanOrEqual(M, m)
-                XCTAssertEqualWithAccuracy(Double(m), Double(M), accuracy: 0.25 * ratio)
+                XCTAssertEqual(Double(m), Double(M), accuracy: 0.25 * ratio)
             }
             else
             {
@@ -73,7 +73,7 @@ class IntTests: XCTestCase
             let (m,M) = counters.reduce((n,n)) { (min($1, $0.0), max($1, $0.1)) }
             
             XCTAssertGreaterThan(M, m)
-            XCTAssertEqualWithAccuracy(Double(m), Double(M), accuracy: Double((iterations * 1) / ( outcomes * 7)))
+            XCTAssertEqual(Double(m), Double(M), accuracy: Double((iterations * 1) / ( outcomes * 7)))
         }
         for count in counters
         {

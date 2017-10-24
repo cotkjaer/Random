@@ -15,7 +15,7 @@ public extension Array
      */
     mutating func shuffle()
     {
-        let N = count
+       let N = count
         
         if N > 1
         {
@@ -25,25 +25,25 @@ public extension Array
                 
                 if j != i
                 {
-                    swap(&self[i], &self[j])
+                    self.swapAt(i, j)
                 }
             }
         }
     }
     
-//    /**
-//     Shuffles the values of the array into a new one
-//     
-//     - returns: Shuffled copy of self
-//     */
-//    func shuffled() -> Array
-//    {
-//        var shuffled = self
-//        
-//        shuffled.shuffle()
-//        
-//        return shuffled
-//    }
+    /**
+     Shuffles the values of the array into a new one
+     
+     - returns: Shuffled copy of self
+     */
+    func shuffled() -> Array
+    {
+        var shuffled = self
+        
+        shuffled.shuffle()
+        
+        return shuffled
+    }
 }
 
 

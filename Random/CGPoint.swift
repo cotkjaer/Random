@@ -22,7 +22,7 @@ public extension CGPoint
     static func random(_ center: CGPoint = CGPoint.zero, betweenRadius r1: CGFloat = 0, radius: CGFloat) -> CGPoint
     {
         let radius = CGFloat.random(between: abs(r1), and: abs(radius))
-        let alpha = CGFloat.random(between: 0, and: 2 * CGFloat(M_PI))
+        let alpha = CGFloat.random(between: 0, and: 2 * .pi)
         
         return CGPoint(x: center.x + cos(alpha) * radius, y: center.y + sin(alpha) * radius)
     }

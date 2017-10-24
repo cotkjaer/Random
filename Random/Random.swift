@@ -25,7 +25,7 @@ public func arc4random<T: ExpressibleByIntegerLiteral>() -> T
  - parameter upper: the maximum bound for the result (excl.), default is 1
  - returns: A random number in the range [lower; upper[, found using arc2random_uniform and linear interpolation
  */
-func arc4random_uniform<T>(above lower: T = 0, below upper: T = 1) -> T where T: FloatingPoint, T: ExpressibleByIntegerLiteral
+func arc4random_uniform<T>(above lower: T = 0, below upper: T = 1) -> T where T: FloatingPoint//, T: ExpressibleByIntegerLiteral
 {
     let seed = UInt32.max/2
     

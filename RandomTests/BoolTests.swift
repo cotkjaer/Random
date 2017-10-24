@@ -21,6 +21,6 @@ class BoolTests: XCTestCase {
             if Bool.random() { trues += 1 } else { falses += 1 }
         }
         
-        XCTAssertEqualWithAccuracy(Double(trues), Double(falses), accuracy: Double(iterations) * 0.02) // less than 2%
+        XCTAssertEqual(Double(trues), Double(falses), accuracy: Double(iterations) * 0.02) // less than 2%
     }
 }
